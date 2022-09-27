@@ -1,1 +1,1 @@
-print(round(1 / float(input()) / float(input()), 2))
+print(abs(int(input())-int(input())))

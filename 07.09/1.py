@@ -1,1 +1,1 @@
-print(int(input())+int(input()))
+print(sum(range(16,25)))

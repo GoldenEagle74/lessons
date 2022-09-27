@@ -1,1 +1,1 @@
-print(round(int(input())/(int(input())/100)**2,2))
+print(int(input())//60//60//24//365+1970)

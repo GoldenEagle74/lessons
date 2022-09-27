@@ -1,1 +1,1 @@
-print(int(input())//60//60//24//365+1970)
+print(input()[::-1])

@@ -1,1 +1,1 @@
-print(255-int(input()))
+print(int(input())+int(input()))

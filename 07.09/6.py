@@ -1,1 +1,1 @@
-print(1572//int(input()))
+print(round(1 / float(input()) / float(input()), 2))

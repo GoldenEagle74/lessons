@@ -1,1 +1,2 @@
-print(input()[::-1])
+a = input()
+print(int(a[0])+int(a[1])+int(a[2]))
