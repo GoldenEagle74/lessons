@@ -18,19 +18,18 @@ English
 3 - [Russian, English,Japenese]
 1 - [English]
 """
-n = set()
-l = set()
+n, l = set(), set()
 a = 0
-flag = True
 for i in range(int(input())):
 	if i != a: continue
 	b = int(input())
 	a += b
 	m = set()
 	for j in range(b):
-		m.add(input())
-		n |= m
-		l = m.intersection(n)
-	flag = False
+		if len(n) == 0: n.add(input())
+		else: m.add(input())
+	n |= m
+	if len(n) >= 2: l &= m
+	else: l = m & n
 print(len(n),str(list(n)).replace("'",""),sep = ' - ')
 print(len(l),str(list(l)).replace("'",""),sep = ' - ')
