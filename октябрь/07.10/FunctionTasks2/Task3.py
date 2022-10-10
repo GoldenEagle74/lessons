@@ -9,10 +9,12 @@
 дить ли еще один рекурсивный вызов. Ваша функция не должна принимать аргумен-
 тов, а возвращать будет числовое значе
 """
-def f(sam = 0):
+sam = float(0)
+def f():
+	global sam
 	try: num = int(input())
 	except: return sam
 	sam += num
-	return f(sam)
+	return f()
 print(f())
 
