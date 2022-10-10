@@ -4,4 +4,4 @@
 Первое значение кортежа - это среднее значение всех параметров, а второе значение - все числа, превышающие среднее значение.
 Второе значение оформите в виде списка.
 """
-def calculate(*args): return tuple([sum(args)/len(args),len([x for x in args if x > sum(args)/len(args)])])
+def calculate(*args): return tuple([sum(args)/len(args),[x for x in args if x > sum(args)/len(args)]])
