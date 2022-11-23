@@ -18,7 +18,7 @@ def map_image():
 	d = x1|x2|x3|x4|x5|x6|x7
 	for y in d:
 		for x in d[y]:
-			if x in range(0,61): img[y][x] = '='
+			if x in range(0,61): img[y][x] = '█'
 	return img
 	
 
@@ -26,7 +26,7 @@ def image(img, d, refresh):
 	if refresh: img = map_image()
 	for y in d:
 		for x in d[y]:
-			if x in range(0,61): img[y][x] = '*'
+			if x in range(0,61): img[y][x] = '='
 	return img
 
 #========Указание расположения пикселей========	
