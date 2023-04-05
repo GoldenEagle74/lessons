@@ -5,5 +5,5 @@
 должен идти текст строки из исходного файла.
 """
 with open(input(),'r') as f, open(input(), 'w+') as g:
-	n = [line for line in f.readlines()]
-	for i in range(len(n)): g.write(str(i)+': '+n[i])
+	n = f.readlines()
+	[g.write(str(i)+': '+n[i]) for i in range(len(n))]

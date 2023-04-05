@@ -3,6 +3,4 @@
 а в качестве значения количество этих цифр в строке
 """
 numbers = "0139412831055230677798"
-a = {}
-for i in range(10):
-	a[i]=numbers.count(str(i))
+a = {i:numbers.count(i) for i in numbers}

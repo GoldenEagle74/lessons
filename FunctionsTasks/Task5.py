@@ -11,8 +11,7 @@
 - остальные случаи — «Выдать грамоту об участии.».
 """
 while True:
-	name = input('Введите имя: ')
-	if name == 'стоп': break
+	if input('Введите имя: ') == 'стоп': break
 	count = int(input('Введите число предметов: '))
 	if count == 'стоп': break
 	sum = 0

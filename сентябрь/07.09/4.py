@@ -1,3 +1,2 @@
-n = []
-for i in range(3): n.append(int(input()))
+n = [int(input) for _ in range(3)]
 print(sum(n),max(n),min(n),sep='\n')

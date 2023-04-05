@@ -1,6 +1,5 @@
 s = input()
-x, y, z = s.split(' ')
-x, y, z = int(x), int(y), int(z)
+x, y, z = list(map(int, s.split(' ')))
 if x < y and y < z:
 	print("Акция!")
 	s=(x+y+z)//2
