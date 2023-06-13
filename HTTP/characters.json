@@ -1,0 +1,585 @@
+[
+    {
+        "name": "Antenna Rick",
+        "planet": "unknown",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/10"
+        ]
+    },
+    {
+        "name": "Ants in my Eyes Johnson",
+        "planet": "unknown",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/8"
+        ]
+    },
+    {
+        "name": "Aqua Morty",
+        "planet": "unknown",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/10",
+            "https://rickandmortyapi.com/api/episode/22"
+        ]
+    },
+    {
+        "name": "Aqua Rick",
+        "planet": "unknown",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/10",
+            "https://rickandmortyapi.com/api/episode/22",
+            "https://rickandmortyapi.com/api/episode/28"
+        ]
+    },
+    {
+        "name": "Arcade Alien",
+        "planet": "unknown",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/13",
+            "https://rickandmortyapi.com/api/episode/19",
+            "https://rickandmortyapi.com/api/episode/21",
+            "https://rickandmortyapi.com/api/episode/25",
+            "https://rickandmortyapi.com/api/episode/26"
+        ]
+    },
+    {
+        "name": "Armagheadon",
+        "planet": "Signus 5 Expanse",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/16"
+        ]
+    },
+    {
+        "name": "Armothy",
+        "planet": "Post-Apocalyptic Earth",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/23"
+        ]
+    },
+    {
+        "name": "Arthricia",
+        "planet": "Purge Planet",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/20"
+        ]
+    },
+    {
+        "name": "Artist Morty",
+        "planet": "unknown",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/10",
+            "https://rickandmortyapi.com/api/episode/28"
+        ]
+    },
+    {
+        "name": "Attila Starwar",
+        "planet": "unknown",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/8",
+            "https://rickandmortyapi.com/api/episode/13",
+            "https://rickandmortyapi.com/api/episode/17"
+        ]
+    },
+    {
+        "name": "Baby Legs",
+        "planet": "unknown",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/8"
+        ]
+    },
+    {
+        "name": "Baby Poopybutthole",
+        "planet": "unknown",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/31"
+        ]
+    },
+    {
+        "name": "Baby Wizard",
+        "planet": "unknown",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/15"
+        ]
+    },
+    {
+        "name": "Bearded Lady",
+        "planet": "unknown",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/15"
+        ]
+    },
+    {
+        "name": "Beebo",
+        "planet": "Venzenulon 7",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/29"
+        ]
+    },
+    {
+        "name": "Benjamin",
+        "planet": "unknown",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/8",
+            "https://rickandmortyapi.com/api/episode/13",
+            "https://rickandmortyapi.com/api/episode/17"
+        ]
+    },
+    {
+        "name": "Bepisian",
+        "planet": "Bepis 9",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/1",
+            "https://rickandmortyapi.com/api/episode/11",
+            "https://rickandmortyapi.com/api/episode/19",
+            "https://rickandmortyapi.com/api/episode/25"
+        ]
+    },
+    {
+        "name": "Beta-Seven",
+        "planet": "unknown",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/14"
+        ]
+    },
+    {
+        "name": "Beth Sanchez",
+        "planet": "Earth (C-500A)",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/8"
+        ]
+    },
+    {
+        "name": "Beth Smith",
+        "planet": "Earth (C-137)",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/1",
+            "https://rickandmortyapi.com/api/episode/2",
+            "https://rickandmortyapi.com/api/episode/3",
+            "https://rickandmortyapi.com/api/episode/4",
+            "https://rickandmortyapi.com/api/episode/5",
+            "https://rickandmortyapi.com/api/episode/6",
+            "https://rickandmortyapi.com/api/episode/22",
+            "https://rickandmortyapi.com/api/episode/51"
+        ]
+    },
+    {
+        "name": "Beth Smith",
+        "planet": "Earth (Evil Rick's Target Dimension)",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/10"
+        ]
+    },
+    {
+        "name": "Beth's Mytholog",
+        "planet": "Nuptia 4",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/18"
+        ]
+    },
+    {
+        "name": "Big Boobed Waitress",
+        "planet": "Fantasy World",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/5"
+        ]
+    },
+    {
+        "name": "Big Head Morty",
+        "planet": "unknown",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/22"
+        ]
+    },
+    {
+        "name": "Big Morty",
+        "planet": "unknown",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/28"
+        ]
+    },
+    {
+        "name": "Body Guard Morty",
+        "planet": "unknown",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/28"
+        ]
+    },
+    {
+        "name": "Bill",
+        "planet": "Earth (C-137)",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/3"
+        ]
+    },
+    {
+        "name": "Bill",
+        "planet": "Earth (Replacement Dimension)",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/2"
+        ]
+    },
+    {
+        "name": "Birdperson",
+        "planet": "Bird World",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/11",
+            "https://rickandmortyapi.com/api/episode/16",
+            "https://rickandmortyapi.com/api/episode/21",
+            "https://rickandmortyapi.com/api/episode/22",
+            "https://rickandmortyapi.com/api/episode/26",
+            "https://rickandmortyapi.com/api/episode/49",
+            "https://rickandmortyapi.com/api/episode/51"
+        ]
+    },
+    {
+        "name": "Black Rick",
+        "planet": "unknown",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/22",
+            "https://rickandmortyapi.com/api/episode/28"
+        ]
+    },
+    {
+        "name": "Blamph",
+        "planet": "unknown",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/19"
+        ]
+    },
+    {
+        "name": "Blim Blam",
+        "planet": "unknown",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/14"
+        ]
+    },
+    {
+        "name": "Blue Diplomat",
+        "planet": "unknown",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/19"
+        ]
+    },
+    {
+        "name": "Blue Footprint Guy",
+        "planet": "Post-Apocalyptic Earth",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/23"
+        ]
+    },
+    {
+        "name": "Blue Shirt Morty",
+        "planet": "unknown",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/10"
+        ]
+    },
+    {
+        "name": "Bobby Moynihan",
+        "planet": "unknown",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/8"
+        ]
+    },
+    {
+        "name": "Boobloosian",
+        "planet": "unknown",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/18",
+            "https://rickandmortyapi.com/api/episode/21"
+        ]
+    },
+    {
+        "name": "Bootleg Portal Chemist Rick",
+        "planet": "unknown",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/28"
+        ]
+    },
+    {
+        "name": "Borpocian",
+        "planet": "unknown",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/22"
+        ]
+    },
+    {
+        "name": "Brad",
+        "planet": "Earth (Replacement Dimension)",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/6",
+            "https://rickandmortyapi.com/api/episode/11",
+            "https://rickandmortyapi.com/api/episode/30",
+            "https://rickandmortyapi.com/api/episode/46"
+        ]
+    },
+    {
+        "name": "Brad Anderson",
+        "planet": "Earth (Replacement Dimension)",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/7"
+        ]
+    },
+    {
+        "name": "Calypso",
+        "planet": "unknown",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/25"
+        ]
+    },
+    {
+        "name": "Campaign Manager Morty",
+        "planet": "unknown",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/28"
+        ]
+    },
+    {
+        "name": "Canklanker Thom",
+        "planet": "Gromflom Prime",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/1"
+        ]
+    },
+    {
+        "name": "Centaur",
+        "planet": "unknown",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/2"
+        ]
+    },
+    {
+        "name": "Chris",
+        "planet": "unknown",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/12"
+        ]
+    },
+    {
+        "name": "Chris",
+        "planet": "Rick's Battery Microverse",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/17"
+        ]
+    },
+    {
+        "name": "Coach Feratu (Balik Alistane)",
+        "planet": "Earth (Replacement Dimension)",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/18"
+        ]
+    },
+    {
+        "name": "Collector",
+        "planet": "The Menagerie",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/29"
+        ]
+    },
+    {
+        "name": "Colossus",
+        "planet": "Post-Apocalyptic Earth",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/23"
+        ]
+    },
+    {
+        "name": "Commander Rick",
+        "planet": "unknown",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/22"
+        ]
+    },
+    {
+        "name": "Concerto",
+        "planet": "unknown",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/24"
+        ]
+    },
+    {
+        "name": "Conroy",
+        "planet": "Earth (Replacement Dimension)",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/22"
+        ]
+    },
+    {
+        "name": "Cool Rick",
+        "planet": "Earth (K-83)",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/28"
+        ]
+    },
+    {
+        "name": "Cop Morty",
+        "planet": "unknown",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/28"
+        ]
+    },
+    {
+        "name": "Cop Rick",
+        "planet": "unknown",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/28"
+        ]
+    },
+    {
+        "name": "Courier Flap",
+        "planet": "unknown",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/21"
+        ]
+    },
+    {
+        "name": "Cousin Nicky",
+        "planet": "unknown",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/15"
+        ]
+    },
+    {
+        "name": "Cowboy Morty",
+        "planet": "unknown",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/10"
+        ]
+    },
+    {
+        "name": "Cowboy Rick",
+        "planet": "unknown",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/10",
+            "https://rickandmortyapi.com/api/episode/28"
+        ]
+    },
+    {
+        "name": "Crab Spider",
+        "planet": "Hideout Planet",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/10"
+        ]
+    },
+    {
+        "name": "Creepy Little Girl",
+        "planet": "unknown",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/2"
+        ]
+    },
+    {
+        "name": "Crocubot",
+        "planet": "unknown",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/25"
+        ]
+    },
+    {
+        "name": "Cronenberg Rick",
+        "planet": "Cronenberg Earth",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/6",
+            "https://rickandmortyapi.com/api/episode/10"
+        ]
+    },
+    {
+        "name": "Cronenberg Morty",
+        "planet": "Cronenberg Earth",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/6",
+            "https://rickandmortyapi.com/api/episode/10"
+        ]
+    },
+    {
+        "name": "Cult Leader Morty",
+        "planet": "unknown",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/10"
+        ]
+    },
+    {
+        "name": "Cyclops Morty",
+        "planet": "unknown",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/10",
+            "https://rickandmortyapi.com/api/episode/28"
+        ]
+    },
+    {
+        "name": "Cyclops Rick",
+        "planet": "unknown",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/10",
+            "https://rickandmortyapi.com/api/episode/22",
+            "https://rickandmortyapi.com/api/episode/28"
+        ]
+    },
+    {
+        "name": "Cynthia",
+        "planet": "unknown",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/4"
+        ]
+    },
+    {
+        "name": "Cynthia",
+        "planet": "Earth (Replacement Dimension)",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/8",
+            "https://rickandmortyapi.com/api/episode/9",
+            "https://rickandmortyapi.com/api/episode/11",
+            "https://rickandmortyapi.com/api/episode/25"
+        ]
+    },
+    {
+        "name": "Dale",
+        "planet": "Giant's Town",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/5"
+        ]
+    },
+    {
+        "name": "Daron Jefferson",
+        "planet": "Unity's Planet",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/14"
+        ]
+    },
+    {
+        "name": "David Letterman",
+        "planet": "Earth (C-500A)",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/8"
+        ]
+    },
+    {
+        "name": "Davin",
+        "planet": "Earth (C-137)",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/1",
+            "https://rickandmortyapi.com/api/episode/6"
+        ]
+    },
+    {
+        "name": "Diablo Verde",
+        "planet": "unknown",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/25"
+        ]
+    },
+    {
+        "name": "Diane Sanchez",
+        "planet": "Earth (C-137)",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/22",
+            "https://rickandmortyapi.com/api/episode/51"
+        ]
+    },
+    {
+        "name": "Dipper and Mabel Mortys",
+        "planet": "unknown",
+        "episodes": [
+            "https://rickandmortyapi.com/api/episode/22"
+        ]
+    }
+]

@@ -1,0 +1,32 @@
+# задача со *, 1 сдавшему это задание засчитываю домашку по функциям без защиты
+#Представьте, что сумма за пользование услугами такси складывается из
+#базового тарифа в размере $4,00 плюс $0,25 за каждые 140 м поездки.
+#Напишите функцию, принимающую в качестве единственного параметра
+#расстояние поездки в километрах и возвращающую итоговую сумму оплаты такси.
+# Решите задание рекурсивной функцией
+#!/bin/bash
+
+calculate_taxi_payment() {
+    local distance=$1
+
+    if (( $(awk -v distance="$distance" 'BEGIN { print (distance <= 0.14) }') )); then
+        echo "4.00"
+    else
+        local remaining_distance=$(awk -v distance="$distance" 'BEGIN { printf "%.2f", distance - 0.14 }')
+        local payment=$(calculate_taxi_payment $remaining_distance)
+        awk -v payment="$payment" 'BEGIN { printf "%.2f", payment + 0.25 }'
+    fi
+}
+
+# Пример использования функции
+read -p "Введите расстояние поездки в километрах: " distance
+result=$(calculate_taxi_payment $distance)
+echo "Итоговая сумма оплаты: $result"
+# 0.42
+# remaining = 0.42-0.14 = 0.28
+# payment = $(0.28
+# 	remaining = 0.28-0.14 = 0.14
+# 	payment = $(4)
+# 	return 4 + 0.25 = 4.25	
+# 	)
+# return 4.25 + 0.25 = 4.50

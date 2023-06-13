@@ -1,0 +1,31 @@
+#Напишите программу считающую и обрабатывающую индекс массы тела.
+#В одной функции программа должна считать ИМТ. В другой обрабатывать, если ИМТ ниже 18.5 печатать "Недостаточный вес",
+#от 18.5 до 25 "ИМТ в норме", больше 25 "Избыточный вес".
+#Формула определения ИМТ: index = weight / (height * height)
+#!/bin/bash
+
+calculate_bmi() {
+    local weight=$1
+    local height=$2
+    local index=$(awk -v w="$weight" -v h="$height" 'BEGIN { printf "%.2f", w / (h * h) }')
+    echo "Индекс массы тела (ИМТ): $index"
+    process_bmi "$index"
+}
+
+process_bmi() {
+    local bmi=$1
+    if (( $(awk -v bmi="$bmi" 'BEGIN { print (bmi < 18.5) }') )); then
+        echo "Недостаточный вес"
+    elif (( $(awk -v bmi="$bmi" 'BEGIN { print (bmi >= 18.5 && bmi <= 25) }') )); then
+        echo "ИМТ в норме"
+    else
+        echo "Избыточный вес"
+    fi
+}
+
+# Пример использования функций
+weight=70
+height=1.75
+
+calculate_bmi $weight $height
+

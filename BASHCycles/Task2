@@ -1,0 +1,5 @@
+#выведите отдельные слова из файла filefortask2.txt в столбик
+#!/bin/bash
+
+cat Filefortask2.txt | tr ';' '\n'
+
