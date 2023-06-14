@@ -4,71 +4,99 @@
 Таблица Должности содержит следующие столбцы: id, название, работники.
 Напишите функции вывода всех должностей запрашиваемого работника, всех работников по должности, всех работников определенной должности со стажем больше 5.
 """
-from sqlalchemy import create_engine, Column, Integer, String, ForeignKey
-from sqlalchemy.orm import sessionmaker, relationship
-from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy import create_engine, Column, Integer, String, Table, ForeignKey
+from sqlalchemy.orm import sessionmaker, relationship, DeclarativeBase
 
 # Создание подключения к базе данных SQLite
-engine = create_engine('sqlite:///company.db')
-Base = declarative_base()
+engine = create_engine('sqlite:///employees.db')
+Session = sessionmaker(bind=engine)
 
-# Определение моделей таблиц
+class Base (DeclarativeBase):
+    pass
+
+# Создание таблицы для связи между "Работниками" и "Должностями"
+employee_position_association = Table('employee_position_association', Base.metadata,
+    Column('employee_id', Integer, ForeignKey('employees.id')),
+    Column('position_id', Integer, ForeignKey('positions.id'))
+)
+
+# Определение модели таблицы "Работники"
 class Employee(Base):
     __tablename__ = 'employees'
     id = Column(Integer, primary_key=True)
     name = Column(String)
     experience = Column(Integer)
-    position_id = Column(Integer, ForeignKey('positions.id'))
-    position = relationship("Position", back_populates="employees")
+    positions = relationship("Position", secondary=employee_position_association, back_populates="employees")
 
+# Определение модели таблицы "Должности"
 class Position(Base):
     __tablename__ = 'positions'
     id = Column(Integer, primary_key=True)
     name = Column(String)
-    employees = relationship("Employee", back_populates="position")
+    employees = relationship("Employee", secondary=employee_position_association, back_populates="positions")
 
+# Создание таблиц в базе данных
 Base.metadata.create_all(engine)
 
-# Функция для вывода всех должностей заданного работника
-def print_employee_positions(employee_name):
-	with Session(autoflush=False, bind=engine) as db:
-    	employee = session.query(Employee).filter_by(name=employee_name).first()
-    if employee:
-        print(f"Должности для работника {employee.name}:")
-        for position in employee.position:
-            print(f"- {position.name}")
-    else:
-        print(f"Работник {employee_name} не найден.")
+# Создание и добавление данных в таблицы
+with Session(autoflush=False, bind=engine) as db:
+    position1 = Position(name='Developer')
+    position2 = Position(name='Manager')
+    position3 = Position(name='Designer')
+    position4 = Position(name='QA')
 
-# Функция для вывода всех работников по должности
-def print_employees_by_position(position_name):
-    with Session(autoflush=False, bind=engine) as db:
-    	position = session.query(Position).filter_by(name=position_name).first()
-    if position:
-        print(f"Работники на должности {position.name}:")
-        for employee in position.employees:
-            print(f"- {employee.name}")
-    else:
-        print(f"Должность {position_name} не найдена.")
+    employee1 = Employee(name='John', experience=7)
+    employee2 = Employee(name='Alice', experience=3)
+    employee3 = Employee(name='Bob', experience=9)
+    employee4 = Employee(name='Eve', experience=5)
 
-# Функция для вывода всех работников определенной должности со стажем больше 5
-def print_employees_by_position_and_experience(position_name):
+    employee1.positions.extend([position1, position2])
+    employee2.positions.append(position1)
+    employee3.positions.extend([position2, position3])
+    employee4.positions.append(position4)
+
+    db.add_all([position1, position2, position3, position4, employee1, employee2, employee3, employee4])
+    db.commit()
+
+# Функции для выполнения запросов
+
+def get_employee_positions(employee_name):
     with Session(autoflush=False, bind=engine) as db:
-    	employees = session.query(Employee).join(Position).filter(Position.name == position_name, Employee.experience > 5).all()
-    if employees:
-        print(f"Работники на должности {position_name} со стажем больше 5:")
-        for employee in employees:
-            print(f"- {employee.name}")
-    else:
-        print(f"Нет работников на должности {position_name} со стажем больше 5.")
+        employee = db.query(Employee).filter_by(name=employee_name).first()
+        if employee:
+            positions = [position.name for position in employee.positions]
+            return positions
+        else:
+            return []
+
+def get_employees_by_position(position_name):
+    with Session(autoflush=False, bind=engine) as db:
+        position = db.query(Position).filter_by(name=position_name).first()
+        if position:
+            employees = [employee.name for employee in position.employees]
+            return employees
+        else:
+            return []
+
+def get_employees_by_position_experience(position_name):
+    with Session(autoflush=False, bind=engine) as db:
+        employees = db.query(Employee).join(employee_position_association).join(Position).filter(
+            Position.name == position_name,
+            Employee.experience > 5
+        ).all()
+        if employees:
+            employees_list = [employee.name for employee in employees]
+            return employees_list
+        else:
+            return []
 
 # Пример использования функций
-employee_name = input("Введите имя работника: ")
-print_employee_positions(employee_name)
 
-position_name = input("Введите название должности: ")
-print_employees_by_position(position_name)
+john_positions = get_employee_positions("John")
+print(f"Должности работника John: {john_positions}")
 
-position_name = input("Введите название должности: ")
-print_employees_by_position_and_experience(position_name)
+developers = get_employees_by_position("Developer")
+print(f"Работники по должности Developer: {developers}")
 
+experienced_managers = get_employees_by_position_experience("Manager")
+print(f"Работники по должности Manager со стажем больше 5: {experienced_managers}")

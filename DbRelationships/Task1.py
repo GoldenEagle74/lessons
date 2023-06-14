@@ -33,8 +33,8 @@ Base.metadata.create_all(engine)
 
 # Функция для вывода всех книг для заданного читателя
 def print_books_for_reader(reader_name):
-	with Session(autoflush=False, bind=engine) as db:
-    	reader = db.query(Reader).filter_by(name=reader_name).first()
+    with Session(autoflush=False, bind=engine) as db:
+        reader = db.query(Reader).filter_by(name=reader_name).first()
     if reader:
         print(f"Книги для читателя {reader.name}:")
         for book in reader.books:
