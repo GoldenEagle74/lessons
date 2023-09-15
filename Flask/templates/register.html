@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Регистрация</h1>
+        <form method="POST">
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    <div class="alert {{ messages[0].split()[0] }}">
+                        {{ messages[0].split()[1] }}
+                    </div>
+                {% endif %}
+            {% endwith %}
+            <label for="username">Имя пользователя:</label>
+            <input type="text" name="username" required>
+            <label for="password">Пароль:</label>
+            <input type="password" name="password" required>
+            <button type="submit">Зарегистрироваться</button>
+        </form>
+        <p>Уже зарегистрированы? <a href="{{ url_for('login') }}">Войти</a></p>
+    </div>
+</body>
+</html>
