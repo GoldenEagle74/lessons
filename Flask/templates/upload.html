@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Загрузка файла</title>
+    <!-- Подключение стилей (путь к вашему CSS) -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Загрузка файла</h1>
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <ul class="messages">
+                    {% for message in messages %}
+                        <li>{{ message }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        {% endwith %}
+        <form method="POST" enctype="multipart/form-data">
+            <label for="file">Выберите файл:</label>
+            <input type="file" id="file" name="file" accept=".jpg, .jpeg, .png, .gif" required>
+            <button type="submit" class="btn btn-primary">Загрузить</button>
+        </form>
+        <a href="{{ url_for('index') }}" class="btn btn-secondary">Вернуться на главную</a>
+    </div>
+</body>
+</html>
