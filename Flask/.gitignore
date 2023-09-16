@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+
+# IDE-specific files
+.idea/
+.vscode/
+
+# SQLite database file
+db.sqlite
+
+# Uploaded files
+uploads/
+
+# Flask application instance folder
+instance/
